@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Sets the language of the document as English -->
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design on mobile devices -->
+    <title>Contact - Ryan Hurley's Portfolio</title> <!-- Sets the title of the webpage -->
+    <link rel="stylesheet" href="/style.css"> <!-- Links to the CSS file for styling the webpage -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul> <!-- List for navigation links -->
+                <li><a href="/">Home</a></li> <!-- Updated Home link -->
+                <li><a href="/about">About</a></li> <!-- Updated About link -->
+                <li><a href="/contact">Contact</a></li> <!-- Updated Contact link -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Me</h1> <!-- Main heading of the page -->
+        <form id="contactForm" action="/submit-form" method="POST"> <!-- Form for user to fill out contact information -->
+            <label for="name">Name:</label> <!-- Label for name and input -->
+            <input type="text" id="name" name="name" required> <!-- Input field for name, required -->
+            
+            <label for="email">Email:</label> <!-- Label for email and input -->
+            <input type="email" id="email" name="email" required> <!-- Input field for email, required -->
+            
+            <label for="message">Message:</label> <!-- Label for message and textarea -->
+            <textarea id="message" name="message" required></textarea> <!-- Textarea for user message, required -->
+            
+            <button type="submit">Submit</button> <!-- Submit button for the form -->
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ryan Hurley</p> <!-- Footer -->
+    </footer>
+    <script src="/script.js"></script> <!-- Links to the JavaScript file for form validation -->
+</body>
+</html>
